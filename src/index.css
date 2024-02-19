@@ -2,6 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "garuteBlack";
+  src: url("./assets/fonts/garute-black.ttf");
+}
+
+@font-face {
+  font-family: "garuteBold";
+  src: url("./assets/fonts/garute-bold.ttf");
+}
+
+@font-face {
+  font-family: "garuteSemiBold";
+  src: url("./assets/fonts/garute-semibold.ttf");
+}
+
+@font-face {
+  font-family: "garuteExtraBold";
+  src: url("./assets/fonts/garute-extrabold.ttf");
+}
+
+@font-face {
+  font-family: "garuteRegular";
+  src: url("./assets/fonts/garute-regular.ttf");
+}
+
+@font-face {
+  font-family: "garuteMedium";
+  src: url("./assets/fonts/garute-medium.ttf");
+}
+
+@font-face {
+  font-family: "garuteLight";
+  src: url("./assets/fonts/garute-light.ttf");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
