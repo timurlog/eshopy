@@ -1,0 +1,101 @@
+/* ########### HEADER ########### */
+.header {
+  background: #D8DBE2;
+  height: calc(5rem + 5px);
+  border-bottom: #A9BCD0 5px solid;
+}
+.header .header-nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+.header .header-nav .nav-toggle {
+  height: 2rem;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+.header .header-nav .nav-toggle .nav-burger,
+.header .header-nav .nav-toggle .nav-close {
+  width: max-content;
+  height: max-content;
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.5rem;
+  color: #1e1e1e;
+  transition: opacity 0.1s, transform 0.4s;
+}
+.header .header-nav .nav-data {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-nav .nav-data a {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-nav .nav-data .nav-logo {
+  height: 3.9rem;
+}
+.header .header-nav .nav-data .nav-name {
+  font-family: "garuteBold";
+  font-size: 2rem;
+  letter-spacing: 3px;
+  color: #58A4B0;
+}
+.header .header-nav .nav-menu {
+  padding: 0 10px;
+  background: #D8DBE2;
+  position: absolute;
+  top: -100%;
+  right: 0;
+  opacity: 0;
+  height: 100vh;
+  width: 40%;
+  z-index: 99;
+  transition: top 0.3s, opacity 0.1s;
+}
+
+/* ######### RESPONSIVE ######### */
+/* ### MOBILE ### */
+@media (max-width: 576px) {
+  .header .header-nav {
+    padding: 0 20px;
+  }
+  .header .header-nav .nav-toggle {
+    width: 2rem;
+  }
+  .header .header-nav .nav-data .nav-logo {
+    height: 2.5rem;
+  }
+  .header .header-nav .nav-menu {
+    width: 100%;
+  }
+}
+.show-menu {
+  opacity: 1 !important;
+  top: 0 !important;
+}
+
+.nav-close {
+  opacity: 0;
+}
+
+.show-icon .nav-burger {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+.show-icon .nav-close {
+  opacity: 1;
+  transform: rotate(90deg);
+}
