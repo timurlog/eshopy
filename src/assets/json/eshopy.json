@@ -1,0 +1,94 @@
+{
+  "articles": [
+    {
+      "name": "CLASSIC ORGANIC TEE - MIDNIGHT FOREST",
+      "price": "$35",
+      "stock": "5",
+      "img": "/assets/image/tshirt-01.avif"
+    },
+    {
+      "name": "OVERSIZED ORGANIC T-SHIRT - GINGER BROWN",
+      "price": "$35",
+      "stock": "8",
+      "img": "/assets/image/tshirt-02.avif"
+    },
+    {
+      "name": "OVERSIZED ORGANIC LS T-SHIRT - HEATHER GREY",
+      "price": "$45",
+      "stock": "3",
+      "img": "/assets/image/tshirt-03.webp"
+    },
+    {
+      "name": "",
+      "price": "",
+      "stock": "",
+      "img": "/assets/image/tshirt-04.avif"
+    },
+    {
+      "name": "",
+      "price": "",
+      "stock": "",
+      "img": "/assets/image/tshirt-05.avif"
+    },
+    {
+      "name": "",
+      "price": "",
+      "stock": "",
+      "img": "/assets/image/tshirt-06.webp"
+    },
+    {
+      "name": "",
+      "price": "",
+      "stock": "",
+      "img": "/assets/image/tshirt-07.avif"
+    },
+    {
+      "name": "",
+      "price": "",
+      "stock": "",
+      "img": "/assets/image/tshirt-08.avif"
+    },
+    {
+      "name": "",
+      "price": "",
+      "stock": "",
+      "img": "/assets/image/tshirt-09.avif"
+    },
+    {
+      "name": "",
+      "price": "",
+      "stock": "",
+      "img": "/assets/image/tshirt-10.webp"
+    },
+    {
+      "name": "",
+      "price": "",
+      "stock": "",
+      "img": "/assets/image/tshirt-11.avif"
+    },
+    {
+      "name": "",
+      "price": "",
+      "stock": "",
+      "img": "/assets/image/tshirt-12.avif"
+    },
+    {
+      "name": "",
+      "price": "",
+      "stock": "",
+      "img": "/assets/image/tshirt-13.webp"
+    },
+    {
+      "name": "",
+      "price": "",
+      "stock": "",
+      "img": "/assets/image/tshirt-14.avif"
+    },
+    {
+      "name": "",
+      "price": "",
+      "stock": "",
+      "img": "/assets/image/tshirt-15.avif"
+    }
+  ]
+}
