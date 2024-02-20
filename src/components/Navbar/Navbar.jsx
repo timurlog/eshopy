@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { useState } from "react";
 import { useEffect } from "react";
 import bape from "../../assets/image/bape-logo.png";
+import BasketCards from "../BasketCards/BasketCards";
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -31,10 +32,9 @@ export default function Navbar() {
           <i className="fa-solid fa-cart-shopping nav-burger"></i>
           <i className="fa-solid fa-xmark nav-close"></i>
         </div>
-        <div
-          className={`nav-menu ${showMenu ? "show-menu" : ""}`}
-          id="navMenu"
-        ></div>
+        <div className={`nav-menu ${showMenu ? "show-menu" : ""}`} id="navMenu">
+          <BasketCards />
+        </div>
       </nav>
     </header>
   );
