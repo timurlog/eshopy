@@ -67,7 +67,7 @@
   right: 0;
   opacity: 0;
   height: 100vh;
-  width: 40%;
+  width: 580px;
   z-index: 99;
   transition: top 0.3s, opacity 0.1s;
 }
