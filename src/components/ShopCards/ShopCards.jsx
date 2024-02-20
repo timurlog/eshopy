@@ -7,7 +7,9 @@ export default function ShopCards(props) {
     <section className="flex flex-col items-center">
       <div className="w-[85%] flex flex-col items-start p-10 pb-5">
         <p className="font-[garuteBold] text-[#1B1B1E] text-4xl">Articles</p>
-        <p className="font-[garuteRegular] text-[#A9BCD0] text-base">Solde : ${props.solde}</p>
+        <p className="font-[garuteRegular] text-[#A9BCD0] text-base">
+          Solde : ${props.solde}
+        </p>
       </div>
       <div className="CardsContainer flex flex-wrap w-[85%] gap-16 justify-center p-10">
         {props.articles.map((element, index) => (
@@ -17,7 +19,7 @@ export default function ShopCards(props) {
             price={element.price}
             stock={element.stock}
             images={element.img}
-            onBuy={() => props.onBuy(element)} 
+            onBuy={() => props.onBuy(element)}
             solde={props.solde}
           />
         ))}
