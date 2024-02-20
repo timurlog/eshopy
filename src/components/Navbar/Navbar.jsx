@@ -55,7 +55,12 @@ export default function Navbar(props) {
                       {item.name}
                     </p>
                     <p
-                      onClick={() => props.onRemove(index)}
+                      onClick={() =>
+                        item.quantity > 1
+                          ? (item.quantity -= 1)
+                          : props.onRemove(index)
+                      }
+                      // onClick={() => props.solde = item.price}
                       className="text-lg text-[#1B1B1E] cursor-pointer"
                     >
                       <i class="fa-solid fa-xmark"></i>

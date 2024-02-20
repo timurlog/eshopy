@@ -42,7 +42,7 @@ export default function App() {
   return (
     <section>
       <div>
-        <Navbar cart={cart} solde={solde} onRemove={handleRemove} />
+        <Navbar cart={cart} solde={solde} newsolde={setSolde} onRemove={handleRemove} />
       </div>
       <div className="md:hidden">
         <SearchBar />
