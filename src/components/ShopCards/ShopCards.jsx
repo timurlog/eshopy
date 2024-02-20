@@ -18,6 +18,7 @@ export default function ShopCards(props) {
             stock={element.stock}
             images={element.img}
             onBuy={() => props.onBuy(element)} 
+            solde={props.solde}
           />
         ))}
       </div>
