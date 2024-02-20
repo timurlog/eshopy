@@ -34,7 +34,9 @@ export default function Navbar() {
         <div
           className={`nav-menu ${showMenu ? "show-menu" : ""}`}
           id="navMenu"
-        ></div>
+        >
+          
+        </div>
       </nav>
     </header>
   );

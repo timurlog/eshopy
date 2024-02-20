@@ -10,13 +10,14 @@ export default function ShopCards(props) {
         <p className="font-[garuteRegular] text-[#A9BCD0] text-base">Solde : US${props.solde}</p>
       </div>
       <div className="CardsContainer flex flex-wrap w-[85%] gap-16 justify-center p-10">
-        {data.articles.map((element, index) => (
+        {props.articles.map((element, index) => (
           <Cards
             key={index}
             name={element.name}
             price={element.price}
             stock={element.stock}
             images={element.img}
+            onBuy={() => props.onBuy(element)} 
           />
         ))}
       </div>
