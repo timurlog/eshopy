@@ -44,6 +44,21 @@ export default function App() {
     setCart((element) => element.filter((item, i) => i !== index));
   };
 
+  
+  const restoreStock = (articleName) => {
+    setArticles(articlePresent =>
+      articlePresent.map(article => {
+        if (article.name === articleName) {
+          return { ...article, stock: article.stock + 1 };
+        }
+        return article;
+      })
+    );
+  };
+    
+
+
+
   return (
     <section>
       <div>
@@ -52,6 +67,7 @@ export default function App() {
           solde={solde}
           newSolde={setSolde}
           onRemove={handleRemove}
+          restoreStock={restoreStock}
         />
       </div>
       <div className="md:hidden">

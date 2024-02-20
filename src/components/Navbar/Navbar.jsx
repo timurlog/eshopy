@@ -65,6 +65,7 @@ export default function Navbar(props) {
                         } else {
                           props.onRemove(index);
                         }
+                        props.restoreStock(item.name, item.quantity);
                       }}
                       className="text-lg text-[#1B1B1E] cursor-pointer"
                     >
