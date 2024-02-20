@@ -6,7 +6,6 @@ import data from './assets/json/eshopy.json'
 
 export default function App() {
   const [solde, setSolde] = useState(54329)
-
   const [cart, setCart] = useState([]);
   const [articles, setArticles] = useState(data.articles);
 
