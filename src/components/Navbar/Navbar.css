@@ -69,7 +69,7 @@
 /* ### MOBILE ### */
 @media (max-width: 576px) {
   .header .header-nav {
-    padding: 0 20px;
+    padding: 0 28px;
   }
   .header .header-nav .nav-toggle {
     width: 2rem;
