@@ -1,8 +1,8 @@
 /* ########### HEADER ########### */
 .header {
-  background: #D8DBE2;
+  background: #d8dbe2;
   height: calc(5rem + 5px);
-  border-bottom: #A9BCD0 5px solid;
+  border-bottom: #a9bcd0 5px solid;
 }
 .header .header-nav {
   height: 100%;
@@ -12,13 +12,19 @@
   padding: 0 50px;
 }
 .header .header-nav .nav-toggle {
-  height: 2rem;
+  cursor: pointer;
+  height: 50px;
   width: 50px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: 100;
+  transition: background 0.2s;
+}
+.header .header-nav .nav-toggle:hover {
+  background: #97C6CE;
 }
 .header .header-nav .nav-toggle .nav-burger,
 .header .header-nav .nav-toggle .nav-close {
@@ -50,11 +56,11 @@
   font-family: "garuteBold";
   font-size: 2rem;
   letter-spacing: 3px;
-  color: #58A4B0;
+  color: #58a4b0;
 }
 .header .header-nav .nav-menu {
   padding: 0 10px;
-  background: #D8DBE2;
+  background: #d8dbe2;
   position: absolute;
   top: -100%;
   right: 0;
@@ -67,15 +73,9 @@
 
 /* ######### RESPONSIVE ######### */
 /* ### MOBILE ### */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .header .header-nav {
     padding: 0 28px;
-  }
-  .header .header-nav .nav-toggle {
-    width: 2rem;
-  }
-  .header .header-nav .nav-data .nav-logo {
-    height: 2.5rem;
   }
   .header .header-nav .nav-menu {
     width: 100%;

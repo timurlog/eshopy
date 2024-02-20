@@ -28,7 +28,7 @@ export default function Navbar() {
           className={`nav-toggle ${showMenu ? "show-icon" : ""}`}
           id="navToggle"
         >
-          <i class="fa-solid fa-cart-shopping nav-burger"></i>
+          <i className="fa-solid fa-cart-shopping nav-burger"></i>
           <i className="fa-solid fa-xmark nav-close"></i>
         </div>
         <div
