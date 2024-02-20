@@ -24,7 +24,7 @@
   transition: background 0.2s;
 }
 .header .header-nav .nav-toggle:hover {
-  background: #97C6CE;
+  background: #97c6ce;
 }
 .header .header-nav .nav-toggle .nav-burger,
 .header .header-nav .nav-toggle .nav-close {
@@ -59,14 +59,15 @@
   color: #58a4b0;
 }
 .header .header-nav .nav-menu {
-  padding: 0 10px;
-  background: #d8dbe2;
+  padding: 0 28px;
+  padding-top: calc(5rem + 20px);
+  background: #fff;
   position: absolute;
   top: -100%;
   right: 0;
   opacity: 0;
   height: 100vh;
-  width: 40%;
+  width: 580px;
   z-index: 99;
   transition: top 0.3s, opacity 0.1s;
 }
@@ -82,6 +83,7 @@
   }
 }
 .show-menu {
+  position: fixed !important;
   opacity: 1 !important;
   top: 0 !important;
 }
@@ -96,6 +98,7 @@
 }
 
 .show-icon .nav-close {
+  position: fixed !important;
   opacity: 1;
   transform: rotate(90deg);
 }

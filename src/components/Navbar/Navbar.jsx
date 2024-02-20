@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { useState } from "react";
 import { useEffect } from "react";
 import bape from "../../assets/image/bape-logo.png";
+// import BasketCards from "../BasketCards/BasketCards";
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
