@@ -11,8 +11,8 @@ export default function App() {
       <div className="md:hidden">
         <SearchBar />
       </div>
-      <div>
-        <Cards />
+      <div className="flex justify-center">
+        <ShopCards />
       </div>
     </section>
   );
