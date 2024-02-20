@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar/Navbar";
 import SearchBar from "./components/SearchBar/SearchBar";
+import ShopCards from "./components/ShopCards/ShopCards";
 
 export default function App() {
   return (
@@ -9,6 +10,9 @@ export default function App() {
       </div>
       <div className="md:hidden">
         <SearchBar />
+      </div>
+      <div>
+        <Cards />
       </div>
     </section>
   );

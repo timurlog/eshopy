@@ -4,91 +4,91 @@
       "name": "BAPE 30th Anniv. Denim Pants",
       "price": "US$352.00",
       "stock": "5",
-      "img": "/assets/image/bape-01.jpg"
+      "img": "bape-01.jpg"
     },
     {
       "name": "Line Camo Patch Denim Double Knee Work Pants",
       "price": "US$753.00",
       "stock": "8",
-      "img": "/assets/image/bape-02.jpg"
+      "img": "bape-02.jpg"
     },
     {
       "name": "Ape Head One Point Relaxed Fit L/S Tee",
       "price": "US$258.00",
       "stock": "3",
-      "img": "/assets/image/bape-03.jpg"
+      "img": "bape-03.jpg"
     },
     {
       "name": "Bape Souvenir Graphic L/s Tee",
       "price": "US$176.00",
       "stock": "5",
-      "img": "/assets/image/bape-04.jpg"
+      "img": "bape-04.jpg"
     },
     {
       "name": "Ape Heart Hoop L/s Tee",
       "price": "US$194.00",
       "stock": "4",
-      "img": "/assets/image/bape-05.jpg"
+      "img": "bape-05.jpg"
     },
     {
       "name": "Baby Milo Crewneck",
       "price": "US$352.00",
       "stock": "6",
-      "img": "/assets/image/bape-06.jpg"
+      "img": "bape-06.jpg"
     },
     {
       "name": "A Bathing Ape Overdye Relaxed Fit Crewneck",
       "price": "US$430.00",
       "stock": "3",
-      "img": "/assets/image/bape-07.jpg"
+      "img": "bape-07.jpg"
     },
     {
       "name": "A Bathing Ape Overdye Pullover Relaxed Fit Hoodie",
       "price": "US$465.00",
       "stock": "5",
-      "img": "/assets/image/bape-08.jpg"
+      "img": "bape-08.jpg"
     },
     {
       "name": "Year Of Dragon Crewneck",
       "price": "US$465.00",
       "stock": "0",
-      "img": "/assets/image/bape-09.jpg"
+      "img": "bape-09.jpg"
     },
     {
       "name": "Logo hoodie",
       "price": "US$439.00",
       "stock": "1",
-      "img": "/assets/image/bape-10.jpg"
+      "img": "bape-10.jpg"
     },
     {
       "name": "Year of the Dragon Tee",
       "price": "US$117.00",
       "stock": "11",
-      "img": "/assets/image/bape-11.jpg"
+      "img": "bape-11.jpg"
     },
     {
       "name": "Color Camo College Tee",
       "price": "US$117.00",
       "stock": "5",
-      "img": "/assets/image/bape-12.jpg"
+      "img": "bape-12.jpg"
     },
     {
       "name": "Katakana Ape Head Tee",
       "price": "US$117.00",
       "stock": "1",
-      "img": "/assets/image/bape-13.jpg"
+      "img": "bape-13.jpg"
     },
     {
       "name": "Bathing Ape Relaxed Fit Tee",
       "price": "US$159.00",
       "stock": "0",
-      "img": "/assets/image/bape-14.jpg"
+      "img": "bape-14.jpg"
     },
     {
       "name": "Year of the Dragon Baby Milo Tee",
       "price": "US$117.00",
       "stock": "4",
-      "img": "/assets/image/bape-15.jpg"
+      "img": "bape-15.jpg"
     }
   ]
 }
