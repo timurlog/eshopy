@@ -71,6 +71,16 @@
   z-index: 99;
   transition: top 0.3s, opacity 0.1s;
 }
+.calc {
+  width: calc(100% - 80px);
+}
+.scroll {
+  height: calc(100vh - 120px);
+  overflow-y: scroll;
+}
+.scroll::-webkit-scrollbar {
+  width: 0px;
+}
 
 /* ######### RESPONSIVE ######### */
 /* ### MOBILE ### */

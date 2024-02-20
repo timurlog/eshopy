@@ -32,22 +32,47 @@ export default function Navbar(props) {
           <i className="fa-solid fa-cart-shopping nav-burger"></i>
           <i className="fa-solid fa-xmark nav-close"></i>
         </div>
-        <div
-          className={`nav-menu ${showMenu ? "show-menu" : ""}`}
-          id="navMenu"
-        >
-
-          <ul className="p-5 rounded-lg">
+        <div className={`nav-menu ${showMenu ? "show-menu" : ""}`} id="navMenu">
+          <ul className="scroll flex flex-col gap-5">
             {props.cart.map((item, index) => (
-              <li key={index} className="flex justify-between gap-2 items-center  p-3 rounded-md bg-gray-200 mb-2">
-                <div><img src={new URL(`../../assets/image/${item.img}`, import.meta.url).href} alt={item.name} className="w-16 h-16 mr-4 bg-white" /></div>
-                <span className=" text-[#58A4B0] text-sm">{item.name} - <span className=" font-bold text-[0.8rem]">{item.price}</span></span>
-                <span className="text-sm text-[#373F51]">x{item.quantity}</span>
-                <button onClick={() => props.onRemove(index)} className="text-[0.5rem] text-black border-[0.5px] rounded-2xl px-1 mt-[-3rem] flex justify-center border-black hover:text-white hover:bg-black">&times;</button>
+              <li
+                key={index}
+                className="h-[124px] w-full bg-[#D8DBE2] flex p-3 rounded-2xl"
+              >
+                <div>
+                  <img
+                    src={
+                      new URL(`../../assets/image/${item.img}`, import.meta.url)
+                        .href
+                    }
+                    alt={item.name}
+                    className="h-[100px]"
+                  />
+                </div>
+                <div className="calc px-4 flex flex-col justify-around">
+                  <div className="flex justify-between">
+                    <p className="font-[garuteBold] text-lg text-[#1B1B1E]">
+                      {item.name}
+                    </p>
+                    <p
+                      onClick={() => props.onRemove(index)}
+                      className="text-lg text-[#1B1B1E] cursor-pointer"
+                    >
+                      <i class="fa-solid fa-xmark"></i>
+                    </p>
+                  </div>
+                  <div className="flex justify-between">
+                    <p className="font-[garuteRegular] text-base text-[#58A4B0]">
+                      x{item.quantity}
+                    </p>
+                    <p className="font-[garuteRegular] text-base text-[#373F51]">
+                      {item.price}
+                    </p>
+                  </div>
+                </div>
               </li>
             ))}
           </ul>
-          
         </div>
       </nav>
     </header>
