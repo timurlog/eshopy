@@ -12,22 +12,18 @@ export default function Cards(props) {
   const priceAsNumber = parseFloat(props.price.replace("US$", ""));
 
   return (
-    <div className="card bg-[#A9BCD0] w-[21rem] h-[22rem] p-7 text-black flex flex-col gap-2 justify-end mb-4 shadow-cardshadow transition-transform duration-500">
+    <div className="card bg-[#A9BCD0] w-[21rem] h-[25rem] px-5 pb-4 text-black flex flex-col justify-between">
       <div className=" w-[100%] flex justify-center items-center p-4">
         {/* Displaying the image of the product */}
-        <img
-          className=" w-[60%] hover:scale-150 transition-transform duration-700"
-          src={imagePath}
-          alt=""
-        />
+        <img className=" w-[70%]" src={imagePath} alt="" />
       </div>
       {/* Displaying the name of the product */}
       <div className=" flex justify-between">
-        <h2 className=" text-[0.9rem] font-[garuteBold] w-[70%] text-[#373F51]">
+        <h2 className=" text-sm font-[garuteBold] w-[70%] text-[#1B1B1E]">
           {props.name}
         </h2>
         {/* Displaying the price of the product */}
-        <p className=" text-[0.8rem] text-[#1e4e55] font-[garuteSemiBold]">
+        <p className=" text-base text-[#1e4e55] font-[garuteSemiBold]">
           {props.price}
         </p>
       </div>
@@ -59,11 +55,18 @@ export default function Cards(props) {
                 images: props.images,
               })
             }
-            className="w-[110px] bg-black h-[40px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#58A4B0] before:to-[#58A4B0] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 font-[garuteRegular] text-[#fff]"
+            className="w-[110px] bg-[#1B1B1E] h-[40px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-100 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#58A4B0] before:to-[#58A4B0] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl active:before:from-[#82BBC4] active:before:to-[#82BBC4] hover:before:left-0 font-[garuteRegular] text-[#fff]"
           >
             Buy
           </button>
-        ) : null}
+        ) : (
+          <button
+            disabled
+            className="w-[110px] bg-gray-500 opacity-50 h-[40px] my-3 flex items-center justify-center rounded-xl cursor-not-allowed relative overflow-hidden transition-all duration-500 ease-in-out shadow-md font-[garuteRegular] text-[#fff]"
+          >
+            Buy
+          </button>
+        )}
       </div>
     </div>
   );

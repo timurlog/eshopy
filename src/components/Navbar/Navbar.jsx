@@ -82,7 +82,7 @@ export default function Navbar(props) {
                         // Restoring the stock of the item
                         props.restoreStock(item.name, item.quantity);
                       }}
-                      className="text-lg text-[#1B1B1E] cursor-pointer"
+                      className="text-lg text-[#1B1B1E] active:text-[#58A4B0] cursor-pointer"
                     >
                       <i class="fa-solid fa-xmark"></i>
                     </p>
