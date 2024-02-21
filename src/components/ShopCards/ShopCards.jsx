@@ -12,9 +12,8 @@ export default function ShopCards(props) {
         </p>
       </div>
       {/* Container for the Cards components */}
-      <div className="CardsContainer flex flex-wrap w-[85%] gap-16 justify-center p-10">     
+      <div className="CardsContainer flex flex-wrap w-[85%] gap-16 justify-center p-10">
         {props.articles.map((element, index) => (
-
           // Passing the name, price, stock, and image of each article
           <Cards
             key={index}
