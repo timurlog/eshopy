@@ -11,15 +11,18 @@ export default function ShopCards(props) {
           Solde : ${props.solde}
         </p>
       </div>
-      <div className="CardsContainer flex flex-wrap w-[85%] gap-16 justify-center p-10">
+      {/* Container for the Cards components */}
+      <div className="CardsContainer flex flex-wrap w-[85%] gap-16 justify-center p-10">     
         {props.articles.map((element, index) => (
+
+          // Passing the name, price, stock, and image of each article
           <Cards
             key={index}
             name={element.name}
             price={element.price}
             stock={element.stock}
             images={element.img}
-            onBuy={() => props.onBuy(element)}
+            onBuy={() => props.onBuy(element)} // Handling the buy action for each article
             solde={props.solde}
           />
         ))}
